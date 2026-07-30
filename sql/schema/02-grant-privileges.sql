@@ -1,0 +1,9 @@
+-- 02-grant-privileges.sql
+-- &1 = Schema Name
+
+BEGIN
+    EXECUTE IMMEDIATE 'GRANT CREATE SESSION TO &1';
+    EXECUTE IMMEDIATE 'GRANT RESOURCE TO &1';
+    DBMS_OUTPUT.PUT_LINE('Granted CREATE SESSION and RESOURCE to &1.');
+END;
+/

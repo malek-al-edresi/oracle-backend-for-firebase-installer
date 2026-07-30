@@ -1,0 +1,30 @@
+{
+  "name": "oracle-backend-for-firebase-installer",
+  "version": "1.0.0",
+  "description": "Automated installer and toolkit for Oracle Backend for Firebase 26.1",
+  "main": "bin/obf-installer.js",
+  "bin": {
+    "obf-installer": "bin/obf-installer.js"
+  },
+  "scripts": {
+    "setup": "node bin/obf-installer.js preflight",
+    "preflight": "node bin/obf-installer.js preflight",
+    "verify": "node bin/obf-installer.js verify",
+    "repair": "node bin/obf-installer.js repair",
+    "rollback": "node bin/obf-installer.js rollback",
+    "status": "node bin/obf-installer.js status",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1",
+    "ora": "^5.4.1",
+    "oracledb": "^6.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
